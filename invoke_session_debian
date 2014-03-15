@@ -20,7 +20,7 @@ echo "export PATH=/lava/bin/:$PATH" > ~/.bashrc
 echo ""
 echo ""
 echo "*******************************************************************************************************"
-echo -n "Please connect to: "
+echo -n "INFO: Please connect to: "
 echo -n "ssh "
 echo -n "-o StrictHostKeyChecking=no "
 echo -n "root@"

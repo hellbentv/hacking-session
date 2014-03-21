@@ -13,7 +13,9 @@ fi
 # Obtain target IP and Hostname
 ip_addr=$(ifconfig `ip route get $gateway | cut -d ' ' -f3` | grep 'inet addr' |awk -F: '{split($2,a," "); print a[1] }')
 hostname=$(cat /etc/hostname)
-
+echo "============================================="
+ifconfig
+echo "============================================="
 # Set the PATH to use the LAVA api
 echo "export PATH=/lava/bin/:$PATH" > ~/.bashrc
 
